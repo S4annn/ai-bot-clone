@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("img/background.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  z-index: 1000;
+}
+
+.header h1 {
+  position: relative;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  animation: fallFromTop 1s ease-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+}
+
+.header span {
+  color: #004080;
+}
+
+.social-media {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  color: white;
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.social-media a {
+  white-space: nonwrap;
+  margin-bottom: 50px;
+  transform: translateY(-50px);
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  color: #ccc;
+}
+
+.container {
+  backdrop-filter: blur(25px);
+  border: 2px solid white;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  height: 350px;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 300px;
+  transition: width 0.3s ease;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.search-box {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.search-button {
+  background: -webkit-linear-gradient(left, #003366, #004080, #0059b3, #0073e6);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.home-button a .active {
+  background-color: #0056b3;
+}
+
+.footer-btn {
+  position: fixed;
+  bottom: -80px;
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.footer-btn a {
+  background-color: transparent;
+  border: none;
+  color: white;
+  margin-top: 100px;
+  margin-bottom: 80px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.footer-btn button:hover {
+  color: #ccc;
+}
+
+hr {
+  position: relative;
+  margin-top: 150px;
+  bottom: 20px;
+  z-index: 1000;
+}
+
+#response {
+  margin-top: 20px;
+  padding: 10px;
+  color: black;
+  font-size: 1rem;
+}
+
+@keyframes fallFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
