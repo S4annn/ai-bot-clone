@@ -1,6 +1,6 @@
 document.getElementById('search-button').addEventListener('click', function () {
     const userInput = document.getElementById('userInput').value.toLowerCase(); 
-    const apiKey = 'AIzaSyBZJwFzPepT_vijZR7QuVq2EtfRn0K9SGQ'; 
+    const apiKey = 'AIzaSyDYNkc6Lv4eW1ZMZosIjE_o81Q37yG9WHY'; 
     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
 
     if (userInput.includes('developer') || userInput.includes('siapa yang membuat program ini') || userInput.includes('siapa yang membuat ini')) {
